@@ -19,19 +19,29 @@ class _MainPageState extends State<MainPage> {
     return Scaffold(
       body: pages[currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: Colors.amber,
         currentIndex: currentIndex,
         elevation: 0,
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.dashboard_outlined),
+            icon: Icon(
+              Icons.dashboard_outlined,
+              size: 30.0,
+            ),
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.credit_card_outlined),
+            icon: Icon(
+              Icons.credit_card_outlined,
+              size: 30.0,
+            ),
             label: 'Benefits',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.discount_outlined),
+            icon: Icon(
+              Icons.discount_outlined,
+              size: 30.0,
+            ),
             label: 'Offers',
           ),
         ],
